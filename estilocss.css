@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f4f4;
+}
+
+/* Parte principal - Centramos todo el contenido con: */
+.container {
+    width: 90%; /* Ocupa 90% del ancho de la pantalla */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;/* Espacio arriba y abajo */
+}
+
+/* Logo o título del sitio */
+.logo {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex; /* Pone los elementos en línea */
+    justify-content: center; /* Centra los elementos */
+    list-style: none; /* Quita los puntitos de la lista */
+}
+
+/* Cada elemento del menú */
+.menu li {
+    margin: 0 10px;/* Espacio entre elementos */
+}
+
+/* Enlaces del menú */
+.menu a {
+    color: rgb(242, 167, 28);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Efecto cuando pasas el mouse sobre enlaces de arriba */
+.menu a:hover {
+    background-color: #ffffffb2;  /* Fondo azul claro */
+}
+
+/* SECCIÓN DE NUESTROS CURSOS */
+.courses {
+    padding: 3rem 0;
+}
+
+.courses h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+/* Contenedor de las tarjetas de cursos */
+.course-grid {
+    display: grid;/* Usamos grid para organizar */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;/* Espacio entre tarjetas */
+}
+
+/* Cada tarjeta de curso */
+.course-card {
+    background-color: rgb(226, 224, 224);/* Fondo grisaceo */
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Sombra suave */
+    text-align: center;
+}
+
+/* Margen arriba y abajo del ver Mas */
+.course-card p {
+    margin-bottom: 1.5rem;
+}
+
+/* BOTONES */
+.button {
+    display: inline-block;
+    background-color: #db9034;
+    color: white;
+    padding: 8px 15px;/* Espacio interno */
+    text-decoration: none;/* Quita subrayado de los botones */
+    border-radius: 3px;/* Esquinas redondeadas */
+}
+
+/* Efecto al pasar mouse sobre botón en la pagina principal */
+.button:hover {
+    background-color: #0000002b;
+}
+
+/* PÁGINAS DE CURSOS */
+/* Encabezado de cada curso */
+.course-hero {
+    padding: 2.5rem 0;
+    color: white;
+    text-align: center;
+}
+
+/* Diferentes colores para cada curso */
+.java-hero {
+    background: #f39c12;
+}
+
+/*Los demás los pongo en el hipotético caso de que estuvieran */
+.javascript-hero {
+    background: #f1c40f;
+}
+
+.sql-hero {
+    background: #3498db;
+}
+
+.html-hero {
+    background: #e74c3c;
+}
+
+/* Titulo de Curso de Java en grande */
+.course-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Contenido principal del curso */
+.course-content {
+    padding: 2rem 0;
+}
+
+/* Barras entre Que es Java y Temario */
+.main-content h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db
+}
+
+.main-content p {
+    margin-bottom: 1.5rem;/* Espacio entre párrafos */
+}
+
+/* Lista de temas */
+.topics-list {
+    list-style-position: inside;
+}
+
+.topics-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+/* Información del curso caja de abajo */
+.sidebar {
+    background-color: white;    /* Fondo blanco */
+    padding: 1.5rem;           /* Espacio interno */
+    border-radius: 5px;        /* Esquinas redondeadas */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.sidebar h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.sidebar li {
+    margin-bottom: 0.8rem;/* Espacio entre elementos */
+}
+
+/* Botón para volver atrás */
+.back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    color: #2980b9;/* Azul más oscuro al pasar mouse */
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
